@@ -114,31 +114,6 @@ Aplikasi akan otomatis terbuka di browser pada alamat `http://localhost:8501`.
 
 ---
 
-## 🌐 Panduan Deployment ke VPS (Production)
-
-Proyek ini telah dilengkapi dengan skrip deployment otomatis di folder `deploy/`.
-
-1. **Arahkan DNS Domain:** Buat **A Record** pada DNS domain menuju alamat IP publik VPS Anda.
-2. **Setup di VPS (Ubuntu 22.04 / 24.04):**
-   ```bash
-   git clone https://github.com/USERNAME/REPO_NAME.git /var/www/sorta
-   cd /var/www/sorta
-   chmod +x deploy/setup_vps.sh
-   ./deploy/setup_vps.sh
-   ```
-3. **Konfigurasi Domain & Nginx:**
-   Salin `deploy/nginx_sorta.conf` ke `/etc/nginx/sites-available/sorta`, sesuaikan nama domain Anda, lalu aktifkan:
-   ```bash
-   sudo ln -s /etc/nginx/sites-available/sorta /etc/nginx/sites-enabled/
-   sudo nginx -t && sudo systemctl restart nginx
-   ```
-4. **Pasang Sertifikat SSL Gratis (HTTPS):**
-   ```bash
-   sudo certbot --nginx -d domainanda.com -d www.domainanda.com
-   ```
-
----
-
 ## 🧪 Hasil Evaluasi Model
 
 Model MobileNetV2 dilatih dengan fine-tuning pada dataset klasifikasi sampah 6 kelas:
