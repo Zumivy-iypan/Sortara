@@ -1,0 +1,27 @@
+[server]
+maxUploadSize = 10
+runOnSave = false
+enableXsrfProtection = true
+address = "127.0.0.1"
+port = 8501
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#111111"
+backgroundColor = "#f7f6f2"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#111111"
+borderColor = "#e5e5e0"
+baseRadius = "0.75rem"
+showWidgetBorder = true
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+
+[theme.sidebar]
+backgroundColor = "#fafafa"
+secondaryBackgroundColor = "#f1f1ef"
+textColor = "#111111"
+borderColor = "#e6e6e2"

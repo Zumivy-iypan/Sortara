@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#11423e"/>
+      <stop offset="55%" stop-color="#0c3431"/>
+      <stop offset="100%" stop-color="#072220"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22e362"/>
+      <stop offset="100%" stop-color="#14c14c"/>
+    </linearGradient>
+    <filter id="softShadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3.5" flood-color="#000000" flood-opacity="0.24"/>
+    </filter>
+    <g id="recycleArm">
+      <polygon points="102.00,62.50 112.50,44.00 117.00,44.00 118.81,44.03 120.59,44.13 122.33,44.30 124.03,44.53 125.69,44.82 127.31,45.19 128.90,45.62 130.44,46.11 131.95,46.67 133.42,47.30 134.86,47.99 136.25,48.75 137.61,49.57 138.92,50.47 140.20,51.42 141.44,52.44 142.65,53.53 143.81,54.69 144.94,55.91 146.03,57.19 147.08,58.55 148.09,59.97 149.06,61.45 150.00,63.00 178.00,111.50 191.00,88.00 192.78,88.64 194.46,89.40 196.03,90.28 197.50,91.28 198.86,92.39 200.12,93.62 201.28,94.98 202.33,96.44 203.28,98.03 204.12,99.74 204.86,101.56 205.50,103.50 182.00,144.20 134.50,73.20 133.73,71.94 132.93,70.75 132.08,69.64 131.20,68.61 130.28,67.66 129.32,66.78 128.33,65.97 127.30,65.25 126.23,64.60 125.12,64.03 123.98,63.53 122.80,63.11 121.58,62.76 120.33,62.50 119.03,62.31 117.70,62.19 116.33,62.15 114.92,62.19 113.48,62.31 112.00,62.50" fill="url(#emeraldGrad)" stroke="url(#emeraldGrad)" stroke-width="2.5" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <!-- Latar kotak membulat (squircle) warna Deep Forest Teal sesuai referensi -->
+  <rect x="0" y="0" width="256" height="256" rx="56" fill="url(#bgGrad)"/>
+  <rect x="5" y="5" width="246" height="246" rx="51" fill="none" stroke="#1f6a63" stroke-width="2" stroke-opacity="0.45"/>
+
+  <!-- 3 panah daur ulang simetris (0, 120, 240 derajat terhadap pusat 128.0, 138.0) -->
+  <g filter="url(#softShadow)">
+    <use href="#recycleArm" transform="rotate(0 128.0 138.0)"/>
+    <use href="#recycleArm" transform="rotate(120 128.0 138.0)"/>
+    <use href="#recycleArm" transform="rotate(240 128.0 138.0)"/>
+  </g>
+
+  <!-- 3 segitiga putih piramida di tengah -->
+  <g fill="#ffffff" stroke="#ffffff" stroke-width="3.0" stroke-linejoin="round" filter="url(#softShadow)">
+    <polygon points="128.00,97.50 114.20,121.40 141.80,121.40" />
+    <polygon points="110.20,129.80 96.40,153.70 124.00,153.70" />
+    <polygon points="145.80,129.80 132.00,153.70 159.60,153.70" />
+  </g>
+</svg>

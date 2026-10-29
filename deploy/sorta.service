@@ -1,0 +1,15 @@
+[Unit]
+Description=SORTARA Streamlit Web Application
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/var/www/sorta
+ExecStart=/var/www/sorta/.venv/bin/streamlit run streamlit_app.py --server.port 8501 --server.address 127.0.0.1
+Restart=always
+RestartSec=3
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

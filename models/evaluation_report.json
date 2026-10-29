@@ -1,0 +1,184 @@
+{
+  "architecture": "MobileNetV2 (Transfer Learning + Fine-Tuning)",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "dataset_summary": {
+    "total_images": 1500,
+    "train_count": 1050,
+    "val_count": 225,
+    "test_count": 225,
+    "per_class_counts": {
+      "Kaca": 250,
+      "Kertas": 250,
+      "Logam": 250,
+      "Organik": 250,
+      "Plastik": 250,
+      "Residu": 250
+    }
+  },
+  "validation_confidence_analysis": {
+    "mean_confidence_when_correct": 0.9129,
+    "mean_confidence_when_wrong": 0.675,
+    "recommended_threshold": 0.6
+  },
+  "test_metrics": {
+    "overall_accuracy": 0.9244,
+    "per_class": {
+      "Kaca": {
+        "precision": 1.0,
+        "recall": 0.7297,
+        "f1_score": 0.8438,
+        "support": 37.0
+      },
+      "Kertas": {
+        "precision": 0.973,
+        "recall": 0.973,
+        "f1_score": 0.973,
+        "support": 37.0
+      },
+      "Logam": {
+        "precision": 0.8372,
+        "recall": 0.9474,
+        "f1_score": 0.8889,
+        "support": 38.0
+      },
+      "Organik": {
+        "precision": 0.95,
+        "recall": 1.0,
+        "f1_score": 0.9744,
+        "support": 38.0
+      },
+      "Plastik": {
+        "precision": 0.8571,
+        "recall": 0.9474,
+        "f1_score": 0.9,
+        "support": 38.0
+      },
+      "Residu": {
+        "precision": 0.9722,
+        "recall": 0.9459,
+        "f1_score": 0.9589,
+        "support": 37.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        27,
+        1,
+        5,
+        1,
+        3,
+        0
+      ],
+      [
+        0,
+        36,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        36,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        38,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        36,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        35
+      ]
+    ]
+  },
+  "sample_predictions": {
+    "correct_examples": [
+      {
+        "file": "plastik_0001.jpg",
+        "true_class": "Plastik",
+        "predicted_class": "Plastik",
+        "confidence": 0.777
+      },
+      {
+        "file": "residu_0054.jpg",
+        "true_class": "Residu",
+        "predicted_class": "Residu",
+        "confidence": 0.9991
+      },
+      {
+        "file": "organik_0166.jpg",
+        "true_class": "Organik",
+        "predicted_class": "Organik",
+        "confidence": 1.0
+      },
+      {
+        "file": "plastik_0178.jpg",
+        "true_class": "Plastik",
+        "predicted_class": "Plastik",
+        "confidence": 0.9838
+      },
+      {
+        "file": "organik_0098.jpg",
+        "true_class": "Organik",
+        "predicted_class": "Organik",
+        "confidence": 1.0
+      }
+    ],
+    "incorrect_examples": [
+      {
+        "file": "kaca_0192.jpg",
+        "true_class": "Kaca",
+        "predicted_class": "Logam",
+        "confidence": 0.972
+      },
+      {
+        "file": "kaca_0204.jpg",
+        "true_class": "Kaca",
+        "predicted_class": "Logam",
+        "confidence": 0.9446
+      },
+      {
+        "file": "kaca_0081.jpg",
+        "true_class": "Kaca",
+        "predicted_class": "Logam",
+        "confidence": 0.5897
+      },
+      {
+        "file": "kaca_0231.jpg",
+        "true_class": "Kaca",
+        "predicted_class": "Plastik",
+        "confidence": 0.8756
+      },
+      {
+        "file": "kaca_0051.jpg",
+        "true_class": "Kaca",
+        "predicted_class": "Kertas",
+        "confidence": 0.2668
+      }
+    ]
+  }
+}

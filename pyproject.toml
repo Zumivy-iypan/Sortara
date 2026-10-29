@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sortara"
+version = "1.0.0"
+description = "SORTARA — Smart Waste Classification System"
+readme = "SPEC.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.40.0",
+    "pillow>=10.0.0",
+    "numpy>=1.26.0",
+    "scikit-learn>=1.5.0",
+    "matplotlib>=3.9.0",
+]
+
+[project.optional-dependencies]
+dl = [
+    "tensorflow>=2.16.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.6.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
