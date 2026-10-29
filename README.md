@@ -7,13 +7,30 @@ Aplikasi web klasifikasi sampah cerdas berbasis *Computer Vision* & *Deep Learni
 
 ---
 
+[![Live Website](https://img.shields.io/badge/🌐_Live_Website-sortara.web.id-10B981?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sortara.web.id)
+<br>
 [![Python Version](https://img.shields.io/badge/Python-3.12%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.40%2B-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.16%2B-FF6F00?logo=tensorflow&logoColor=white)](https://tensorflow.org/)
 [![Tests](https://img.shields.io/badge/Tests-17%20Passed-brightgreen?logo=pytest&logoColor=white)](https://pytest.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+> 🚀 **Aplikasi telah resmi go-live dan dapat diakses publik secara online di: [https://sortara.web.id](https://sortara.web.id)**
+
 </div>
+
+---
+
+## 🌐 Akses Aplikasi Online (Production)
+
+Aplikasi SORTARA telah aktif di cloud server dan siap digunakan oleh publik:
+
+| Keterangan | Tautan / Detail |
+| :--- | :--- |
+| **Domain Utama** | 🔗 [https://sortara.web.id](https://sortara.web.id) |
+| **Alternatif (WWW)** | 🔗 [https://www.sortara.web.id](https://www.sortara.web.id) |
+| **Keamanan** | Enkripsi SSL/TLS (Let's Encrypt HTTPS) & Proteksi CSRF |
+| **Infrastruktur** | AWS Cloud (EC2 Ubuntu) + Reverse Proxy Nginx + Systemd Daemon |
 
 ---
 
@@ -79,8 +96,8 @@ Sorta Project/
 
 ### 1. Clone Repositori
 ```bash
-git clone https://github.com/USERNAME/REPO_NAME.git
-cd REPO_NAME
+git clone https://github.com/Zumivy-iypan/Sortara.git
+cd Sortara
 ```
 
 ### 2. Buat dan Aktifkan Virtual Environment
